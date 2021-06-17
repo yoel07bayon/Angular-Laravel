@@ -24,8 +24,8 @@ export class CursoEditComponent implements OnInit {
   ngOnInit(): void {
     if (this.curso) {
       this.cursoForm.patchValue({
-        name: this.curso.nombre,
-        detail: this.curso.detalle
+        nombre: this.curso.nombre,
+        detalle: this.curso.detalle
       });
     }
 

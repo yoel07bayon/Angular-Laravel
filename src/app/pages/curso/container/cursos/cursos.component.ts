@@ -63,10 +63,10 @@ export class CursosComponent implements OnInit {
     this.cursoService.getCursoById(id).subscribe(response => {
       this.curso = response.data;
 
-      const productForm = this.modalService.open(CursoEditComponent, {size: 'lg'});
-      productForm.componentInstance.title = 'Editar Producto';
-      productForm.componentInstance.product = this.curso;
-      productForm.result.then((result) => {
+      const cursoForm = this.modalService.open(CursoEditComponent, {size: 'lg'});
+      cursoForm.componentInstance.title = 'Editar Curso';
+      cursoForm.componentInstance.curso = this.curso;
+      cursoForm.result.then((result) => {
         if (result) {
           this.cursoService.updateCurso(this.curso.id, result).subscribe(resp => {
             if (resp.success) {

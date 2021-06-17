@@ -12,13 +12,17 @@ import {IconsComponent} from '../../pages/icons/icons.component';
 import {MapsComponent} from '../../pages/maps/maps.component';
 import {UserProfileComponent} from '../../pages/user-profile/user-profile.component';
 import {TablesComponent} from '../../pages/tables/tables.component';
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ProductComponent} from "../../pages/product/container/product/product.component";
 import {ProductNewComponent} from "../../pages/product/components/forms/product-new/product-new.component";
 import {ProductEditComponent} from "../../pages/product/components/forms/product-edit/product-edit.component";
 import {ProductListComponent} from "../../pages/product/components/list/product-list/product-list.component";
 import {ProductsService} from "../../../providers/products/products.service";
+
 import { CursoNewComponent} from "../../pages/curso/components/forms/curso-new/curso-new.component";
+import { CursoEditComponent } from 'src/app/pages/curso/components/forms/curso-edit/curso-edit.component';
+
 import { CursosService } from 'src/providers/cursos/cursos.service';
 import { ListCursosComponent } from 'src/app/pages/curso/components/list/list-cursos/list-cursos.component';
 import { CursosComponent } from 'src/app/pages/curso/container/cursos/cursos.component';
@@ -41,13 +45,18 @@ import { CursosComponent } from 'src/app/pages/curso/container/cursos/cursos.com
     TablesComponent,
     IconsComponent,
     MapsComponent,
+
     ProductComponent,
     ProductNewComponent,
     ProductEditComponent,
     ProductListComponent,
+
     CursoNewComponent,
     ListCursosComponent,
     CursosComponent,
+    CursoEditComponent,
+
+
   ], providers: [ProductsService, CursosService]
 })
 

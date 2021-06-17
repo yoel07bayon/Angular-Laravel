@@ -5,14 +5,12 @@
   </button>
 </div>
 <div class="modal-body">
-
- <form>
-
+ <form [formGroup]="cursoForm">
     <div class="form-group">
       <label for="dateOfBirth">Nombre</label>
       <div class="input-group">
 
-        <input id="dateOfBirth" class="form-control" placeholder="name" name="dp" formControlName="name">
+        <input id="dateOfBirth" class="form-control" placeholder="name" name="dp" formControlName="nombre">
 
       </div>
     </div>
@@ -20,7 +18,7 @@
       <label for="dateOfBirth2">Detalle</label>
       <div class="input-group">
 
-        <input id="dateOfBirth2" class="form-control" placeholder="detail" name="dp" formControlName="detail">
+        <input id="dateOfBirth2" class="form-control" placeholder="detail" name="dp" formControlName="detalle">
 
       </div>
     </div>
