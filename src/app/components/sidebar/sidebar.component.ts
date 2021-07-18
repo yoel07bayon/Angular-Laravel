@@ -18,6 +18,10 @@ export const ROUTES: RouteInfo[] = [
   {path: '/register', title: 'Register', icon: 'ni-circle-08 text-pink', class: ''},
   {path: '/products', title: 'Products', icon: 'ni-bullet-list-67 text-red', class: ''},
   {path: '/cursosNoe', title: 'cursos', icon: 'ni-bullet-list-67 text-red', class: ''},
+  {path: '/matriculasNoah', title: 'Matriculas', icon: 'ni-bullet-list-67 text-red', class: ''},
+  {path: '/alumnos77', title: 'Alumnos', icon: 'ni-bullet-list-67 text-red', class: ''},
+  {path: '/rolsBayon', title: 'Rols', icon: 'ni-bullet-list-67 text-red', class: ''},
+
 
 ];
 

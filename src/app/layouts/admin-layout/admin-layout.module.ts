@@ -14,6 +14,7 @@ import {UserProfileComponent} from '../../pages/user-profile/user-profile.compon
 import {TablesComponent} from '../../pages/tables/tables.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import {ProductComponent} from "../../pages/product/container/product/product.component";
 import {ProductNewComponent} from "../../pages/product/components/forms/product-new/product-new.component";
 import {ProductEditComponent} from "../../pages/product/components/forms/product-edit/product-edit.component";
@@ -26,6 +27,21 @@ import { CursoEditComponent } from 'src/app/pages/curso/components/forms/curso-e
 import { CursosService } from 'src/providers/cursos/cursos.service';
 import { ListCursosComponent } from 'src/app/pages/curso/components/list/list-cursos/list-cursos.component';
 import { CursosComponent } from 'src/app/pages/curso/container/cursos/cursos.component';
+
+import { MatriculasService } from 'src/providers/matriculas/matriculas.service';
+import { MatriculaNewComponent } from 'src/app/pages/matricula/components/forms/matricula-new/matricula-new.component';
+import { MatriculaEditComponent } from 'src/app/pages/matricula/components/forms/matricula-edit/matricula-edit.component';
+import { MatriculaListComponent } from 'src/app/pages/matricula/components/list/matricula-list/matricula-list.component';
+import { MatriculaComponent } from 'src/app/pages/matricula/container/matricula/matricula.component';
+
+import { RolsService } from 'src/providers/rols/rols.service';
+import { RolComponent } from 'src/app/pages/rol/container/rol/rol.component';
+import { RolEditComponent } from 'src/app/pages/rol/components/forms/rol-edit/rol-edit.component';
+import { RolNewComponent } from 'src/app/pages/rol/components/forms/rol-new/rol-new.component';
+import { RolListComponent } from 'src/app/pages/rol/components/list/rol-list/rol-list.component';
+
+import { AlumnoComponent } from 'src/app/pages/alumno/container/alumno/alumno.component';
+import { AlumnoListComponent } from 'src/app/pages/alumno/components/alumno-list/alumno-list.component';
 
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -57,7 +73,23 @@ import { CursosComponent } from 'src/app/pages/curso/container/cursos/cursos.com
     CursoEditComponent,
 
 
-  ], providers: [ProductsService, CursosService]
+    MatriculaNewComponent,
+    MatriculaEditComponent,
+    MatriculaListComponent,
+    MatriculaComponent,
+
+    RolComponent,
+    RolEditComponent,
+    RolNewComponent,
+    RolListComponent,
+
+    AlumnoComponent,
+    AlumnoListComponent,
+
+
+
+
+  ], providers: [ProductsService, CursosService, MatriculasService, RolsService]
 })
 
 export class AdminLayoutModule {

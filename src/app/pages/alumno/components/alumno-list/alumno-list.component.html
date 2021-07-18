@@ -1,0 +1,30 @@
+<br>
+<br>
+<div class="container">
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda Central" title="Busqueda Rapida" class="form-control">
+
+<table  id="example" class="table">
+  <thead class="table-warning">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">CodigoAlumno</th>
+    <th scope="col">Ap. Paterno</th>
+    <th scope="col">Ap. Materno</th>
+    <th scope="col">Nombres</th>
+    <th scope="col">Opcion</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of alumnos; let i = index">
+    <th scope="row">{{i+1}}</th>
+    <td >{{item.cod_alumno}}</td>
+    <td >{{item.appaterno}}</td>
+    <td >{{item.apmaterno}}</td>
+    <td >{{item.name}}</td>
+  </tr>
+
+  </tbody>
+</table>
+</div>
